@@ -1,5 +1,7 @@
-<label class="{{ctx.input.labelClass}}">
+<div class="checkbox">
     {{ctx.input.content}}
-    {% if (!ctx.self.labelIsHidden()) { %}<span>{{ctx.input.label}}</span>{% } %}
-</label>
-<div ref="value">{% if (ctx.checked) { %}True{% } else { %}False{% } %}</div>
+    <label class="{{ctx.input.labelClass}}">
+        {% if (!ctx.self.labelIsHidden()) { %}<span>{{ctx.input.label}}</span>{% } %}
+    </label>
+    <div ref="value">{% if (ctx.checked) { %}True{% } else { %}False{% } %}</div>
+</div>

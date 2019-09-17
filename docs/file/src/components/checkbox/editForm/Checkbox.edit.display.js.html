@@ -225,6 +225,7 @@
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/components/checkbox/editForm/Checkbox.edit.display.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import BuilderUtils from &apos;../../../utils/builder&apos;;
+import _ from &apos;lodash&apos;;
 
 export default [
   {
@@ -247,15 +248,11 @@ export default [
     customDefaultValue: () =&gt; &apos;&apos;,
     template: &apos;{{ item.label }}&apos;,
     data: {
-      custom({
-        instance: {
-          root: {
-            editForm,
-            editComponent,
-          } = {},
-        } = {},
-      }) {
-        return BuilderUtils.getAvailableShortcuts(editForm, editComponent);
+      custom(context) {
+        return BuilderUtils.getAvailableShortcuts(
+          _.get(context, &apos;instance.options.editForm&apos;, {}),
+          _.get(context, &apos;instance.options.editComponent&apos;, {})
+        );
       },
     },
   },

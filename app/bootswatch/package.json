@@ -34,8 +34,4 @@
     "postcss-cli": "^4.1.0",
     "postcss-flexbugs-fixes": "^2.0.0"
   }
-
-,"_resolved": "https://registry.npmjs.org/bootswatch/-/bootswatch-4.3.1.tgz"
-,"_integrity": "sha512-kNdpo/TnhO++aic1IODLIe1V0lx6pXwHMpwXMacpANDnuVDtgU1MUgUbVMC3rSWm4UcbImfwPraNYgjKDT0BtA=="
-,"_from": "bootswatch@4.3.1"
 }

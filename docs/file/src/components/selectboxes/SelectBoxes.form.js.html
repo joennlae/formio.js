@@ -230,6 +230,15 @@ import SelectBoxesEditValidation from &apos;./editForm/SelectBoxes.edit.validati
 export default function(...extend) {
   return radioEditForm([
     {
+      key: &apos;data&apos;,
+      components: [
+        {
+          key: &apos;dataType&apos;,
+          ignore: true,
+        }
+      ]
+    },
+    {
       key: &apos;validation&apos;,
       components: SelectBoxesEditValidation
     }

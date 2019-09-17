@@ -270,6 +270,10 @@ export default class Multivalue extends Field {
     }));
   }
 
+  renderElement() {
+    return &apos;&apos;;
+  }
+
   renderRow(value, index) {
     return this.renderTemplate(&apos;multiValueRow&apos;, {
       index,
