@@ -146,7 +146,8 @@ export default class Formio {
     };
 
     if (!this.projectUrl || (this.projectUrl === this.base)) {
-      this.projectUrl = hostName + '/formio';
+      const addOn = '/formio';
+      this.projectUrl = hostName + addOn;
     }
 
     if (!this.noProject) {
